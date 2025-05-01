@@ -24,7 +24,7 @@ public class TriangleTest {
         Point c = new Point(6, 2);
         Triangle triangle = new Triangle(a, b, c);
         double result = triangle.area();
-        double expected = 8.5;  // Рассчитано вручную по формуле Герона
+        double expected = 8.5;
         assertThat(result).isCloseTo(expected, offset(0.001));
     }
 
