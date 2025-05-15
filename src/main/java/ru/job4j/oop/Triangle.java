@@ -12,9 +12,6 @@ public class Triangle {
     }
 
     public double semiPerimeter(double a, double b, double c) {
-        a = first.distance(second);
-        b = first.distance(third);
-        c = second.distance(third);
         return (a + b + c) / 2;
     }
 

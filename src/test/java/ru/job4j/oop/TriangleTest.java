@@ -47,4 +47,14 @@ public class TriangleTest {
         Triangle triangle = new Triangle(a, b, c);
         triangle.area();
     }
+
+    @Test
+    public void whenAllPointsEqualThenReturnMinusOne() {
+        Point a = new Point(0, 0);
+        Point b = new Point(0, 0);
+        Point c = new Point(0, 0);
+        Triangle triangle = new Triangle(a, b, c);
+        double result = triangle.area();
+        assertThat(result).isEqualTo(-1);
+    }
 }
